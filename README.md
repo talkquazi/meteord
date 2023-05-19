@@ -134,3 +134,16 @@ docker run -d \
     -p 8080:80 \
     talkquazi/meteord:binbuild
 ~~~
+
+# BUILDING FOR DOCKER HUB
+
+```
+cd base
+docker build -t meteord:base -f Dockerfile .
+docker tag meteord:base talkquazi/meteord:latest
+docker push talkquazi/meteord:latest
+docker tag meteord:base talkquazi/meteord:node
+docker push talkquazi/meteord:node
+docker tag meteord:base talkquazi/meteord:node-8.11.2
+docker push talkquazi/meteord:node-8.11.2
+```
