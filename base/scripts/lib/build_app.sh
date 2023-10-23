@@ -6,7 +6,7 @@ BUNDLE_DIR=/tmp/bundle-dir
 
 # sometimes, directly copied folder cause some wierd issues
 # this fixes that
-echo "=> Copying the app"
+echo "=> Copying The App"
 cp -R /app $COPIED_APP_PATH
 cd $COPIED_APP_PATH
 

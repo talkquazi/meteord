@@ -1,4 +1,4 @@
-FROM ubuntu:22.10
+FROM ubuntu:23.10
 MAINTAINER Chris McCaulley
 
 ENV METEORD_DIR /opt/meteord
