@@ -1,4 +1,4 @@
-FROM ubuntu:23.10
+FROM ubuntu:25.10
 MAINTAINER Chris McCaulley
 
 ENV METEORD_DIR /opt/meteord
@@ -8,9 +8,6 @@ ARG NODE_VERSION
 ENV NODE_VERSION ${NODE_VERSION:-8.11.2}
 ONBUILD ENV NODE_VERSION ${NODE_VERSION:-8.11.2}
 
-# Update repositories to old-releases
-RUN sed -i 's|http://archive.ubuntu.com/ubuntu/|http://old-releases.ubuntu.com/ubuntu/|g' /etc/apt/sources.list && \
-    sed -i 's|http://security.ubuntu.com/ubuntu/|http://old-releases.ubuntu.com/ubuntu/|g' /etc/apt/sources.list
 
 RUN bash $METEORD_DIR/lib/install_base.sh
 RUN bash $METEORD_DIR/lib/install_dependencies.sh

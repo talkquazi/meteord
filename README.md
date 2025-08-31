@@ -1,5 +1,3 @@
-[![Circle CI](https://circleci.com/gh/abernix/meteord/tree/master.svg?style=svg)](https://circleci.com/gh/abernix/meteord/tree/master)
-
 # MeteorD - Docker image for MUP
 
 ## Supported tags
